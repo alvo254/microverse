@@ -1,5 +1,5 @@
 # microverse
-This is a python microservice gRPC
+
 
 ## Introduction to gRPC
 
