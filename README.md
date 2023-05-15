@@ -10,3 +10,11 @@ gRPC clients and servers can run and talk to each other in a variety of environm
 
 ## gRPC vs Grapql
 gRPC comes with native support for code generation, whereas for GraphQL, you need third-party tools. gRPC can generate server and client code from the . proto file without requiring third-party tools. Another difference is that gRPC does not come with browser support because browsers do not support HTTP/2 yet.
+
+
+## generate pb.go
+protoc --go_out=. --go-grpc_out=. proto/greet.protoprotoc 
+
+## Go plugins for the protocol compiler:
+ go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
